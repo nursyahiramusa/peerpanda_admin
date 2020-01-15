@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Home"
+    tools:showIn="@layout/app_bar_home">
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="-10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Welcome to\nPeer Panda Administrator"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@color/white"
+            >
+        </TextView>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnhome"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_rectangle_lightgrey"
+        android:text="HOME"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:layout_below="@+id/top"
+        android:layout_alignParentStart="true"
+        >
+    </Button>
+    <Button
+        android:id="@+id/btnlist"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_rectangle_lightgrey"
+        android:text="Tutor\nlist"
+        android:textColor="@color/oren"
+        android:textStyle="bold"
+        android:layout_below="@+id/top"
+        android:layout_alignParentRight="true"
+        >
+    </Button>
+    <Button
+        android:id="@+id/btnreq"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_rectangle_lightgrey"
+        android:text="tutor\nrequest"
+        android:textColor="@color/green"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnhome"
+        >
+    </Button>
+    <Button
+        android:id="@+id/btnlogout"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_rectangle_lightgrey"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:text="log out"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnlist"
+        >
+    </Button>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_menu"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>
